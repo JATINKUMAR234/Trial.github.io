@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+  body {
+    display: grid;
+    grid-template-columns: 4rem repeat(12,1fr) 4rem ;
+    column-gap: 1.6rem;
+    grid-template-rows:  [ViewPort]8vh [Clock_1]35rem [Clock_2]minmax(10vw,20vw)[row_end];
+    background: #091921;
+    position: relative;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      grid-template-columns:  1rem repeat(12,1fr) 1rem ;
+      column-gap: .4rem;
+    }
+    .Section_4{
+      margin-top: 6vw;
+    }
+  }
+
+.Section_1{
+  grid-row: Clock_2/row_end;
+  grid-column: 1/-1;
+  background: #091921;
+  // margin-top: -10rem;
+  // clip-path: ellipse(50% 18% at 50% 0%);
+  border-radius: 0% 0% 255% 255%;
+  z-index: 5;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.8);
+}
+
+.Selection{
+  grid-row: row_end/5;
+  background: white;
+  grid-column: 1/-1;
+  transform: scaleY(180%);
+  z-index:4;
+  background:linear-gradient(rgb(254, 254, 254), rgb(241, 188, 217));
+  // border-radius:  255% 255% 0% 0%;
+}
+.Section_2{
+
+  grid-row: 5/6;
+  // background: linear-gradient(to right, rgb(255, 218, 237) ,rgb(251, 75, 183));
+  grid-column: 1/-1;
+  background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  border-radius:135% 135% 0% 0%;
+  z-index: 5;
+  // box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.8);
+}
+
+.Section_3{
+  position: relative;
+  grid-row: 6/7;
+  grid-column: 1/-1;
+  display: grid;
+  background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  grid-template-rows: repeat(3,1fr);
+  // background: linear-gradient(to right , rgb(240, 201, 236), rgb(238, 136, 206));
+  &::before{
+    display: "";
+    height: 5vh;
+    width: 5vh;
+    background: rebeccapurple;
+    
+  }
+}
+
+.Section_4{
+  background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  grid-row: 7/8;
+  grid-column: 1/-1;
+  z-index: 2;
+  display: grid;
+  grid-template-rows:  2vw repeat(4,1fr);
+
+}
+
+.Section_5{
+  background: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+  grid-row: 8/9;
+  grid-column: 1/-1;
+  z-index: 2;
+  display: grid;
+  color: rgba(255, 255, 255, 0.5);
+  grid-template-rows:  2vw repeat(4,1fr);
+ 
+}
+

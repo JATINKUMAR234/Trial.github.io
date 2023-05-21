@@ -1,0 +1,41 @@
+.sphere{
+    content: "";
+    height: 20vw;
+    width: 20vw;
+    box-shadow: 0 1.5rem 1.5rem rgba(217, 125, 185, 0.5),
+    0 1.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    z-index: 6;
+    border-radius: 50%;
+    position: absolute;
+    opacity: .6;
+    
+    &_1{
+        background: linear-gradient(#fa3ba1,#af00ef)
+        // background: rgb(241, 100, 201);
+    }
+    &_2{
+        
+        // background: rgb(193, 59, 155);
+        background: linear-gradient(#f5180a, #c736fa);
+      
+    }
+    &_3{
+        background: rgb(241, 183, 225);
+        background: linear-gradient(#f80078, #54003e);
+      
+    }
+    &_4{
+        background: rgb(231, 205, 223);
+        background: linear-gradient(#f200c5, #f289cd);
+       
+    }
+    &_5{
+        background: rgb(199, 99, 171);
+        background: linear-gradient(#8b0af5, #f00677);
+    }
+}
+
+.Sphere_animation{
+animation: S_Opacity 3s linear forwards ;
+}
+

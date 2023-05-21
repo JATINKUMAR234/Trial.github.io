@@ -1,0 +1,38 @@
+.Clock{
+    grid-column: 3/13;
+    grid-row: Clock_1/Clock_2;
+    display: grid;
+    grid-template-columns:  [Clock_start]minmax(20%,50%) [Clock_mid]50%[Clock_end] ;
+}
+
+@media only screen and (max-width: 600px) {
+    .Clock {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    .Clock_alg{
+        grid-column: 1/-1 !important;
+        
+    }
+    .Clock_dig{
+        grid-column: 1/-1 !important;
+    }
+  }
+
+.Clock_alg{
+grid-column: Clock_start/Clock_mid;
+display: flex;
+justify-content: center;
+font-family:'Poppins', sans-serif;
+}
+
+
+.Clock_dig{
+    grid-column: Clock_mid/Clock_end;
+    display: grid;
+    grid-template-rows: repeat(2,35%) 1fr;
+    font-family: 700;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: .2rem;
+    z-index: 10;
+} 

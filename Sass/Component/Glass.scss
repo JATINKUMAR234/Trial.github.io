@@ -1,0 +1,115 @@
+.Glass_style1{
+          height: 10vw;
+          width: 13vw;
+          border-radius: 2vw;
+          position: absolute;
+          top:2%;
+          animation: Movement 3s linear infinite;
+          z-index: 10;
+
+          &::after{
+            content: "";
+          background:rgba(255, 255, 255, 0.1);
+          box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+          border-top:.1rem solid rgba(255, 255, 255, 0.5);
+          border-left: .1rem solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(.5rem);
+          border-radius: 1vw;
+            height: 4vw;
+            width: 5vw;
+            display: block;
+            // transform:translate(200%,-110%) ;
+            animation: MovementY 3s linear infinite;
+          }
+
+          &::before{
+            content: "";
+          background:rgba(255, 255, 255, 0.1);
+          box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+          border-top:.1rem solid rgba(255, 255, 255, 0.5);
+          border-left: .1rem solid rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(.5rem);
+          border-radius: 1vw;
+            height: 4vw;
+            width: 5vw;
+            display: block;
+            animation: MovementX 3s linear infinite;
+          }
+}
+
+.Glass_style2{
+    height: 12vw;
+    width: 15vw;
+    border-radius: 2vw;
+    position: absolute;
+    top:10%;
+    right: -5%;
+    animation: Movement 3s linear infinite;
+    z-index: 10;
+
+    &::after{
+      content: "";
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    border-top:.1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+    border-radius: 1vw;
+      height: 4vw;
+      width: 5vw;
+      display: block;
+      animation: Movement_Y 3s linear infinite;
+    }
+
+    &::before{
+      content: "";
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    border-top:.1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+    border-radius: 1vw;
+      height: 4vw;
+      width: 5vw;
+      display: block;
+      animation: Movement_X 3s linear infinite;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .Glass_style1{
+    height: 6rem;
+    width: 8rem;
+    &::before{
+      height: 3rem;
+      width: 4rem;
+      position: absolute;
+      bottom: 80%;
+    }
+    &::after{
+      height: 3rem;
+      width: 4rem;
+      position: absolute;
+      top:30%;
+      left: -20%;
+    }
+  }
+
+  .Glass_style2{
+    height: 6rem;
+    width: 8rem;
+    &::before{
+      height: 3rem;
+      width: 4rem;
+      position: absolute;
+      bottom: 80%;
+    }
+    &::after{
+      height: 3rem;
+      width: 4rem;
+      position: absolute;
+      top:40%;
+      left: -20%;
+    }
+  }
+}

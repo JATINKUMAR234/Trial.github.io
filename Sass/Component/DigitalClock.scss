@@ -1,0 +1,108 @@
+
+.Clock_dig_Day{
+    grid-row:1/2 ;
+    display: flex;
+    font-size: 10vw;
+    font-family: 700;
+    align-items:center;
+    justify-content: center;
+    color: #091921b6;
+    text-shadow: 0 -1rem 1rem rgba(255, 255, 255, 0.12),
+                 0 1rem 1rem rgba(0, 0, 0, 0.39);  
+  
+  }
+  
+  .Clock_dig_Date{
+    grid-row: 2/3;
+    color: #091921b6;
+    text-shadow: .5rem .5rem 1rem #1e1e21;
+     text-shadow: 0 -.5rem .5rem rgba(255, 255, 255, 0.08),
+                 0 1rem 1rem rgba(0, 0, 0, 0.39);  
+    display: flex;
+    font-size: 6vw;
+    font-family: 700;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: .2rem;
+    justify-content: center;
+  
+  }
+  
+  .Clock_dig_Time{
+    grid-row: 3/4;
+    color: white;
+    border-top: .3rem solid  #2d2f41;
+    text-shadow: 0 -.5rem .5rem rgba(255, 255, 255, 0.08),
+                 0 1rem 1rem rgba(0, 0, 0, 0.39);  
+    display: flex;
+    font-size: 5vw;
+    font-family: 700;
+    font-family: "Segoe UI", sans-serif;
+    letter-spacing: .2vw;
+    justify-content: center;
+  }
+  
+  .info{
+    display: flex;
+    font-size: 2vw;
+    align-items: center;
+    transform: translateY(-2vw);
+  }
+  
+  .Clock_Mir_Day{
+    grid-row:3/5 ;
+    display: flex;
+    font-size: 6vw;
+    font-family: 700;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    border-radius: 2vw;
+    animation: ReverseOpacityLeft_1 2s linear ;
+  }
+  
+  .Clock_Mir_Bor1{
+    grid-row: 5/6;
+    border-radius: 2vw;
+    height: 2vw;
+    align-self: center;
+    animation: ReverseOpacityLeft_2 2s linear  ;
+  }
+  
+  .Clock_Mir_Bor2{
+    grid-row: 6/7;
+    border-radius: 2vw;
+    height: 2.5vw;
+    animation: ReverseOpacityLeft_3 2s linear ;
+  }
+  
+  .Clock_Mir_Box_Time{
+    font-size: 8vw;
+    grid-row: 7/9;
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 2vw;
+    height: 8vw;
+    animation: ReverseOpacityLeft_4 2s linear;
+  }
+
+//   .Clock_Mir_Axis{
+    
+// &:hover{
+//   transform: translateZ(3rem);
+//   background:rgba(255, 255, 255, 0.1);
+//   box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+//   border-top:.1rem solid rgba(255, 255, 255, 0.5);
+//   border-left: .1rem solid rgba(255, 255, 255, 0.5);
+//   backdrop-filter: blur(.5rem);
+//   border-radius: 2rem;
+// }
+//   }
+  
+  
+  .GlassInfo{
+    font-size: 2vw;
+    padding: 0vw 0vw 3vw;
+  }
+  

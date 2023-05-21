@@ -1,0 +1,220 @@
+.border{
+    height: 2vw;
+    width: 80%;
+    // display: flex;
+    // justify-content: center;
+    transform: translate(10%,-50%);
+    border-radius: 2vw;
+    grid-row: 1/2;
+}
+
+.Glass_text{
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vw;
+}
+
+.Glass_1{
+    grid-row: 2/3;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+
+    &_text{
+      height: 12vw;
+      width: 60%;
+      font-size: 5vw;
+      border-radius: 2vw;
+    }
+    &_img{
+
+      height: 15vw;
+      width: 1%;
+      align-self: baseline;
+      transform: translate(-10%,1%);
+      border-radius: 2vw;
+      box-shadow: none;
+      z-index: 2;
+      transition: all 1s ease-in;
+      
+    }
+    &_text:hover+&_img{
+      height: 20vw;
+      width: 20%;
+    }
+}
+
+
+
+.Glass_2{
+  grid-row: 3/4;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  &_text{
+    height: 12vw;
+    width: 60%;
+    font-size: 5vw;
+    border-radius: 2vw;
+    order: 1;
+    
+  }
+  &_img{
+    height: 15vw;
+    width: 1%;
+    align-self:center;
+    transform: translate(10%,-20%);
+    border-radius: 2vw;
+    box-shadow: none;
+    z-index: 2;
+    transition: all 1s ease-in;
+  }
+  &_text:hover+&_img{
+    height: 20vw;
+    width: 20%;
+  }
+}
+
+.Glass_3{
+  grid-row: 4/5;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  &_text{
+    height: 12vw;
+    width: 60%;
+    font-size: 5vw;
+    border-radius: 2vw;
+  }
+  &_img{
+    height: 15vw;
+    width: 1%;
+    align-self: baseline;
+    transform: translate(-10%,1%);
+    border-radius: 2vw ;
+    box-shadow: none;
+    z-index: 2;
+    transition: all 1s ease-in;
+  }
+  &_text:hover+&_img{
+    height: 20vw;
+    width: 20%;
+  }
+}
+
+.Glass_4{
+  grid-row: 5/6;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  &_text{
+    height: 12vw;
+    width: 60%;
+    font-size: 5vw;
+    border-radius: 2vw;
+    order: 1;
+    
+  }
+  &_img{
+    height: 15vw;
+    width: 1%;
+    transform: translate(10%,-20%);
+    border-radius:  2vw;
+    box-shadow: none;
+    z-index: 2;
+    align-self: center;
+    transition: all 1s ease-in;
+  }
+  &_text:hover+&_img{
+    height: 20vw;
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ .Glass_1{
+  &_img{
+    height: 10vw;
+    width: 20%;
+  }
+ }
+ .Glass_2{
+  &_img{
+    height: 10vw;
+    width: 20%;
+    align-self: normal;
+  }
+ }
+ .Glass_3{
+  &_img{
+    height: 10vw;
+    width: 20%;
+  }
+ }
+ .Glass_4{
+  &_img{
+    height: 10vw;
+    width: 20%;
+    align-self: normal;
+  }
+ }
+}
+
+
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.BoxImg_Size{
+  height: 20vw;
+  width: 100%;
+  border-radius: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

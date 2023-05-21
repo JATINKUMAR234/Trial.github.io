@@ -1,0 +1,15 @@
+.Opacity{
+    animation: Opacity .5s linear forwards;
+}
+
+.Translucent_Glass{
+    background:rgba(255, 255, 255, 0.1);
+    box-shadow: 2rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    border-top:.1rem solid rgba(255, 255, 255, 0.5);
+    border-left: .1rem solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(.5rem);
+}
+
+.Display_none{
+    display: none !important;
+}
